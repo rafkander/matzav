@@ -3,55 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Matzav - Make it fresh</title>
+  <title>Matzav - Make it Fresh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #e6eff5;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f4f8;
       color: #333;
     }
     header {
-      background-color: #2d3e50;
+      background-color: #001f3f;
       color: white;
       padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     header h1 {
       margin: 0;
+      font-size: 1.8rem;
     }
     nav a {
       color: white;
       margin-left: 1.5rem;
       text-decoration: none;
+      font-weight: 300;
     }
-    section {
-      padding: 3rem 2rem;
-      max-width: 1000px;
-      margin: auto;
+    nav a:hover {
+      text-decoration: underline;
     }
     .hero {
       text-align: center;
+      background-color: #e0f7fa;
+      padding: 5rem 2rem;
+      color: #004d40;
     }
     .hero h2 {
-      font-size: 2.5rem;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+    .hero button {
+      background-color: #00796b;
+      color: white;
+      border: none;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .hero button:hover {
+      background-color: #004d40;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
     }
     .section-title {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    footer {
-      background-color: #2d3e50;
-      color: white;
+      font-size: 2.2rem;
+      color: #00796b;
+      margin-bottom: 2rem;
       text-align: center;
-      padding: 1rem;
     }
     iframe {
       width: 100%;
       height: 315px;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    ul li {
       margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+    blockquote {
+      background-color: #fff8e1;
+      border-left: 5px solid #ffb300;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+    footer {
+      background-color: #001f3f;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    a {
+      color: #00796b;
     }
   </style>
 </head>
@@ -76,8 +127,10 @@
 
   <section id="videos">
     <h3 class="section-title">Course Videos & Playlist</h3>
-    <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
-    <iframe src="https://www.youtube.com/embed/your-second-video-id" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/4Tpe7H--t7Y" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/cCUo9-Qo4Xw" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/aD430RZnY88" frameborder="0" allowfullscreen></iframe>
+    <p>Visit our channel: <a href="https://www.youtube.com/@MatsuvMakers" target="_blank">@MatsuvMakers</a></p>
   </section>
 
   <section id="tips">
@@ -97,15 +150,15 @@
 
   <section id="quotes">
     <h3 class="section-title">Quotes</h3>
-    <blockquote>"Learning is living." - You</blockquote>
-    <blockquote>"We grow every day." - Eli</blockquote>
-    <blockquote>"This course changed how I learn." - Student</blockquote>
+    <blockquote>"Learning is living." – You</blockquote>
+    <blockquote>"We grow every day." – Eli</blockquote>
+    <blockquote>"This course changed how I learn." – Student</blockquote>
   </section>
 
   <section id="contact">
     <h3 class="section-title">Contact Us</h3>
-    <p>Email: contact@matzav.com</p>
-    <p>Instagram: @matzav_course</p>
+    <p>Email: <a href="mailto:contact@matzav.com">contact@matzav.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/matzav_course" target="_blank">@matzav_course</a></p>
   </section>
 
   <section id="merch">
